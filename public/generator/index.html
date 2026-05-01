@@ -1,0 +1,1653 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MVP Website Generator — Create Beautiful E-commerce Sites</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Tajawal:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a href="#" class="logo">
+          <i class="fas fa-wand-magic-sparkles"></i>
+          <span>MVP Generator</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#templates">Templates</a>
+          <a href="#features">Features</a>
+          <a href="#how-it-works">How It Works</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="btn btn-primary" onclick="scrollToGenerator()">
+            <i class="fas fa-rocket"></i>
+            Start Building
+          </button>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <span class="logo">
+          <i class="fas fa-wand-magic-sparkles"></i>
+          MVP Generator
+        </span>
+        <button class="mobile-menu-close" id="mobileMenuClose">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <nav class="mobile-nav">
+        <a href="#templates">Templates</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+      </nav>
+      <div class="mobile-menu-footer">
+        <button
+          class="btn btn-primary btn-block"
+          onclick="
+            scrollToGenerator();
+            closeMobileMenu();
+          "
+        >
+          <i class="fas fa-rocket"></i>
+          Start Building
+        </button>
+      </div>
+    </div>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-bolt"></i>
+          No Coding Required
+        </div>
+        <h1 class="hero-title">
+          Create Stunning
+          <span class="gradient-text">E-commerce Websites</span> in Minutes
+        </h1>
+        <p class="hero-subtitle">
+          Build beautiful, responsive MVP websites with bilingual support
+          (English/Arabic), light/dark modes, and WhatsApp integration. Perfect
+          for small businesses.
+        </p>
+        <div class="hero-ctas">
+          <button class="btn btn-primary btn-lg" onclick="scrollToGenerator()">
+            <i class="fas fa-wand-magic-sparkles"></i>
+            Start Creating
+          </button>
+          <a href="#templates" class="btn btn-outline btn-lg">
+            <i class="fas fa-eye"></i>
+            View Templates
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">Templates</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6</span>
+            <span class="stat-label">Industries</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Responsive</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Features</span>
+          <h2 class="section-title">Everything You Need</h2>
+          <p class="section-subtitle">
+            Powerful features to create professional websites
+          </p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-language"></i>
+            </div>
+            <h3>Bilingual Support</h3>
+            <p>
+              Full English & Arabic support with RTL layouts and proper
+              typography
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-moon"></i>
+            </div>
+            <h3>Light & Dark Mode</h3>
+            <p>Beautiful themes that adapt to user preferences automatically</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fab fa-whatsapp"></i>
+            </div>
+            <h3>WhatsApp Integration</h3>
+            <p>
+              Built-in WhatsApp ordering system for seamless customer
+              communication
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-mobile-screen"></i>
+            </div>
+            <h3>Fully Responsive</h3>
+            <p>Perfect display on all devices from mobile to desktop</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3>Custom Colors</h3>
+            <p>
+              Control full light/dark palettes, brand accents, fonts, and media
+              styling
+            </p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-download"></i>
+            </div>
+            <h3>Export Ready</h3>
+            <p>Download clean HTML/CSS/JS files ready for hosting</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates" id="templates">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Templates</span>
+          <h2 class="section-title">Choose Your Industry</h2>
+          <p class="section-subtitle">
+            Pre-designed templates for various business types
+          </p>
+        </div>
+        <div class="templates-grid">
+          <div
+            class="template-card"
+            data-template="clothing"
+            onclick="selectTemplate('clothing')"
+          >
+            <div class="template-preview clothing-preview">
+              <i class="fas fa-shirt"></i>
+            </div>
+            <div class="template-info">
+              <h3>Clothing Store</h3>
+              <p>Fashion, apparel, accessories</p>
+              <span class="template-count">4 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="pharmacy"
+            onclick="selectTemplate('pharmacy')"
+          >
+            <div class="template-preview pharmacy-preview">
+              <i class="fas fa-prescription-bottle-medical"></i>
+            </div>
+            <div class="template-info">
+              <h3>Pharmacy</h3>
+              <p>Medicine, health products</p>
+              <span class="template-count">3 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="electronics"
+            onclick="selectTemplate('electronics')"
+          >
+            <div class="template-preview electronics-preview">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <div class="template-info">
+              <h3>Electronics</h3>
+              <p>Gadgets, devices, tech</p>
+              <span class="template-count">4 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="groceries"
+            onclick="selectTemplate('groceries')"
+          >
+            <div class="template-preview groceries-preview">
+              <i class="fas fa-basket-shopping"></i>
+            </div>
+            <div class="template-info">
+              <h3>Groceries</h3>
+              <p>Supermarket, food items</p>
+              <span class="template-count">3 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="restaurant"
+            onclick="selectTemplate('restaurant')"
+          >
+            <div class="template-preview restaurant-preview">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <div class="template-info">
+              <h3>Restaurant</h3>
+              <p>Food delivery, dining</p>
+              <span class="template-count">6 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="coffeeshop"
+            onclick="selectTemplate('coffeeshop')"
+          >
+            <div class="template-preview coffeeshop-preview">
+              <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="template-info">
+              <h3>Coffee Shop</h3>
+              <p>Cafes, coffee, bakeries</p>
+              <span class="template-count">6 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="nuts"
+            onclick="selectTemplate('nuts')"
+          >
+            <div class="template-preview nuts-preview">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div class="template-info">
+              <h3>Nuts & Dried Fruits</h3>
+              <p>Specialty food, organic</p>
+              <span class="template-count">6 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="beauty"
+            onclick="selectTemplate('beauty')"
+          >
+            <div class="template-preview beauty-preview">
+              <i class="fas fa-spa"></i>
+            </div>
+            <div class="template-info">
+              <h3>Beauty & Spa</h3>
+              <p>Beauty, cosmetics, wellness</p>
+              <span class="template-count">6 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="sports"
+            onclick="selectTemplate('sports')"
+          >
+            <div class="template-preview sports-preview">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="template-info">
+              <h3>Sports & Gym</h3>
+              <p>Sports, gym, equipment</p>
+              <span class="template-count">6 Variations</span>
+            </div>
+          </div>
+          <div
+            class="template-card"
+            data-template="furniture"
+            onclick="selectTemplate('furniture')"
+          >
+            <div class="template-preview furniture-preview">
+              <i class="fas fa-couch"></i>
+            </div>
+            <div class="template-info">
+              <h3>Furniture</h3>
+              <p>Home decor, furniture</p>
+              <span class="template-count">6 Variations</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Process</span>
+          <h2 class="section-title">How It Works</h2>
+          <p class="section-subtitle">Create your website in 4 simple steps</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <h3>Choose Template</h3>
+            <p>
+              Select from 6 industry categories with multiple design variations
+            </p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <h3>Enter Details</h3>
+            <p>Add your business name, products, images, and contact info</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <h3>Customize</h3>
+            <p>Pick your colors, adjust settings, and preview in real-time</p>
+          </div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <h3>Generate & Export</h3>
+            <p>Download your ready-to-host website files instantly</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Generator Section -->
+    <section class="generator" id="generator">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Create</span>
+          <h2 class="section-title">Build Your Website</h2>
+          <p class="section-subtitle">
+            Fill in the details below to generate your custom website
+          </p>
+        </div>
+
+        <div class="generator-layout">
+          <!-- Form Panel -->
+          <div class="generator-form">
+            <!-- Progress Steps -->
+            <div class="form-progress">
+              <div class="progress-step active" data-step="1">
+                <span class="progress-number">1</span>
+                <span class="progress-label">Template</span>
+              </div>
+              <div class="progress-line"></div>
+              <div class="progress-step" data-step="2">
+                <span class="progress-number">2</span>
+                <span class="progress-label">Business</span>
+              </div>
+              <div class="progress-line"></div>
+              <div class="progress-step" data-step="3">
+                <span class="progress-number">3</span>
+                <span class="progress-label">Products</span>
+              </div>
+              <div class="progress-line"></div>
+              <div class="progress-step" data-step="4">
+                <span class="progress-number">4</span>
+                <span class="progress-label">Design</span>
+              </div>
+            </div>
+
+            <!-- Step 1: Template Selection -->
+            <div class="form-step active" id="step1">
+              <h3 class="form-step-title">
+                <i class="fas fa-layer-group"></i>
+                Select Template
+              </h3>
+              <div class="template-select-grid">
+                <label class="template-option">
+                  <input
+                    type="radio"
+                    name="template"
+                    value="clothing"
+                    checked
+                  />
+                  <div class="template-option-content">
+                    <i class="fas fa-shirt"></i>
+                    <span>Clothing</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="pharmacy" />
+                  <div class="template-option-content">
+                    <i class="fas fa-prescription-bottle-medical"></i>
+                    <span>Pharmacy</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="electronics" />
+                  <div class="template-option-content">
+                    <i class="fas fa-laptop"></i>
+                    <span>Electronics</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="groceries" />
+                  <div class="template-option-content">
+                    <i class="fas fa-basket-shopping"></i>
+                    <span>Groceries</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="restaurant" />
+                  <div class="template-option-content">
+                    <i class="fas fa-utensils"></i>
+                    <span>Restaurant</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="coffeeshop" />
+                  <div class="template-option-content">
+                    <i class="fas fa-mug-hot"></i>
+                    <span>Coffee Shop</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="nuts" />
+                  <div class="template-option-content">
+                    <i class="fas fa-seedling"></i>
+                    <span>Nuts & Dried</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="beauty" />
+                  <div class="template-option-content">
+                    <i class="fas fa-spa"></i>
+                    <span>Beauty & Spa</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="sports" />
+                  <div class="template-option-content">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Sports & Gym</span>
+                  </div>
+                </label>
+                <label class="template-option">
+                  <input type="radio" name="template" value="furniture" />
+                  <div class="template-option-content">
+                    <i class="fas fa-couch"></i>
+                    <span>Furniture</span>
+                  </div>
+                </label>
+              </div>
+
+              <h4 class="form-subsection-title">Design Variation</h4>
+              <div class="variation-select">
+                <label class="variation-option">
+                  <input type="radio" name="variation" value="modern" checked />
+                  <div class="variation-content">
+                    <span class="variation-name">Modern</span>
+                    <span class="variation-desc">Clean, minimal design</span>
+                  </div>
+                </label>
+                <label class="variation-option">
+                  <input type="radio" name="variation" value="bold" />
+                  <div class="variation-content">
+                    <span class="variation-name">Bold</span>
+                    <span class="variation-desc"
+                      >Strong edges & typography</span
+                    >
+                  </div>
+                </label>
+                <label class="variation-option">
+                  <input type="radio" name="variation" value="elegant" />
+                  <div class="variation-content">
+                    <span class="variation-name">Elegant</span>
+                    <span class="variation-desc">Sophisticated & refined</span>
+                  </div>
+                </label>
+                <label class="variation-option">
+                  <input type="radio" name="variation" value="playful" />
+                  <div class="variation-content">
+                    <span class="variation-name">Playful</span>
+                    <span class="variation-desc">Rounded & colorful</span>
+                  </div>
+                </label>
+                <label class="variation-option">
+                  <input type="radio" name="variation" value="minimal" />
+                  <div class="variation-content">
+                    <span class="variation-name">Minimal</span>
+                    <span class="variation-desc">Stripped back, pure</span>
+                  </div>
+                </label>
+                <label class="variation-option">
+                  <input type="radio" name="variation" value="luxury" />
+                  <div class="variation-content">
+                    <span class="variation-name">Luxury</span>
+                    <span class="variation-desc">Premium, high-end feel</span>
+                  </div>
+                </label>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-outline" onclick="generateWebsite()">
+                  <i class="fas fa-vial"></i>
+                  Generate Test Website
+                </button>
+                <button class="btn btn-primary" onclick="nextStep()">
+                  Next: Business Details
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Business Info -->
+            <div class="form-step" id="step2">
+              <h3 class="form-step-title">
+                <i class="fas fa-store"></i>
+                Business Information
+              </h3>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Business Name (English) *</label>
+                  <input
+                    type="text"
+                    id="businessNameEn"
+                    placeholder="e.g., Maestro Fashion"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Business Name (Arabic) *</label>
+                  <input
+                    type="text"
+                    id="businessNameAr"
+                    placeholder="مثال: مايسترو للأزياء"
+                    dir="rtl"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Tagline (English)</label>
+                  <input
+                    type="text"
+                    id="taglineEn"
+                    placeholder="e.g., Wear the Beat"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Tagline (Arabic)</label>
+                  <input
+                    type="text"
+                    id="taglineAr"
+                    placeholder="مثال: العب دورك"
+                    dir="rtl"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>About Us (English)</label>
+                <textarea
+                  id="aboutEn"
+                  rows="3"
+                  placeholder="Tell your story..."
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>About Us (Arabic)</label>
+                <textarea
+                  id="aboutAr"
+                  rows="3"
+                  placeholder="أخبر قصتك..."
+                  dir="rtl"
+                ></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Number of Customers</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-users"></i>
+                  <input
+                    type="number"
+                    id="customerCount"
+                    placeholder="1250"
+                    min="0"
+                  />
+                </div>
+                <p class="form-hint">
+                  Used in the statistics section. Leave empty to estimate from
+                  your reviews and products.
+                </p>
+              </div>
+
+              <h4 class="form-subsection-title">Contact Information</h4>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>WhatsApp Number *</label>
+                  <div class="input-with-icon">
+                    <i class="fab fa-whatsapp"></i>
+                    <input
+                      type="tel"
+                      id="whatsappNumber"
+                      placeholder="96181982312"
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Phone Number</label>
+                  <div class="input-with-icon">
+                    <i class="fas fa-phone"></i>
+                    <input
+                      type="tel"
+                      id="phoneNumber"
+                      placeholder="+961 81 982 312"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>Instagram</label>
+                  <div class="input-with-icon">
+                    <i class="fab fa-instagram"></i>
+                    <input type="text" id="instagram" placeholder="@yourshop" />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Email</label>
+                  <div class="input-with-icon">
+                    <i class="fas fa-envelope"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="hello@yourshop.com"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Location</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-location-dot"></i>
+                  <input
+                    type="text"
+                    id="location"
+                    placeholder="Lebanon — Ships Nationwide"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Google Map Location</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-map-location-dot"></i>
+                  <input
+                    type="text"
+                    id="mapLocation"
+                    placeholder="Hamra, Beirut, Lebanon"
+                  />
+                </div>
+                <p class="form-hint">
+                  Use an address, city, place name, or Google Maps link.
+                </p>
+              </div>
+
+              <div class="form-group">
+                <label>Logo URL (optional)</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-image"></i>
+                  <input
+                    type="url"
+                    id="logoUrl"
+                    placeholder="https://example.com/logo.png"
+                  />
+                </div>
+              </div>
+
+              <h4 class="form-subsection-title">Media Content</h4>
+
+              <div class="form-group">
+                <label>Hero Carousel Images</label>
+                <textarea
+                  id="carouselImages"
+                  rows="4"
+                  placeholder="Paste image URLs, one per line"
+                ></textarea>
+                <p class="form-hint">
+                  These images appear in the generated website heading carousel.
+                </p>
+              </div>
+
+              <div class="form-group">
+                <label>Video Link</label>
+                <div class="input-with-icon">
+                  <i class="fas fa-play"></i>
+                  <input
+                    type="url"
+                    id="videoUrl"
+                    placeholder="https://youtube.com/watch?v=..."
+                  />
+                </div>
+                <p class="form-hint">
+                  Supports YouTube, Vimeo, or direct MP4/WebM links.
+                </p>
+              </div>
+
+              <h4 class="form-subsection-title">Customer Feedback</h4>
+
+              <div class="form-group">
+                <label>Reviews</label>
+                <textarea
+                  id="customerFeedback"
+                  rows="8"
+                  placeholder="Name EN | Name AR | City EN | City AR | Rating | Feedback EN | Feedback AR | Image URL"
+                ></textarea>
+                <p class="form-hint">
+                  One review per line. Example: Maya Haddad | مايا حداد | Beirut
+                  | بيروت | 5 | Amazing service | خدمة رائعة
+                </p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-outline" onclick="prevStep()">
+                  <i class="fas fa-arrow-left"></i>
+                  Back
+                </button>
+                <button class="btn btn-primary" onclick="nextStep()">
+                  Next: Products
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 3: Products -->
+            <div class="form-step" id="step3">
+              <h3 class="form-step-title">
+                <i class="fas fa-boxes-stacked"></i>
+                Products & Categories
+              </h3>
+
+              <div class="prefill-bar">
+                <button
+                  class="btn btn-sm btn-outline"
+                  onclick="prefillDemoData()"
+                  title="Fill the form with demo content and sample products for testing"
+                >
+                  <i class="fas fa-wand-magic-sparkles"></i>
+                  Prefill Demo Data
+                </button>
+              </div>
+
+              <div class="products-manager">
+                <div class="categories-section">
+                  <div class="section-header-inline">
+                    <h4>Categories</h4>
+                    <button
+                      class="btn btn-sm btn-outline"
+                      onclick="addCategory()"
+                    >
+                      <i class="fas fa-plus"></i>
+                      Add Category
+                    </button>
+                  </div>
+                  <div id="categoriesList" class="categories-list">
+                    <!-- Categories will be rendered here -->
+                  </div>
+                </div>
+
+                <div class="products-section">
+                  <div class="section-header-inline">
+                    <h4>Products</h4>
+                    <button
+                      class="btn btn-sm btn-primary"
+                      onclick="addProduct()"
+                    >
+                      <i class="fas fa-plus"></i>
+                      Add Product
+                    </button>
+                  </div>
+                  <div id="productsList" class="products-list">
+                    <!-- Products will be rendered here -->
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-outline" onclick="prevStep()">
+                  <i class="fas fa-arrow-left"></i>
+                  Back
+                </button>
+                <button class="btn btn-primary" onclick="nextStep()">
+                  Next: Design
+                  <i class="fas fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Design & Colors -->
+            <div class="form-step" id="step4">
+              <h3 class="form-step-title">
+                <i class="fas fa-palette"></i>
+                Design & Colors
+              </h3>
+
+              <h4 class="form-subsection-title">Brand Colors</h4>
+              <div class="color-pickers">
+                <div class="color-picker-group">
+                  <label>Primary Color</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="primaryColor" value="#1a1a1a" />
+                    <input
+                      type="text"
+                      id="primaryColorText"
+                      value="#1a1a1a"
+                      class="color-text"
+                    />
+                  </div>
+                  <p class="color-hint">
+                    Main buttons, headings, and key accents.
+                  </p>
+                </div>
+                <div class="color-picker-group">
+                  <label>Secondary Color</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="secondaryColor" value="#d4a017" />
+                    <input
+                      type="text"
+                      id="secondaryColorText"
+                      value="#d4a017"
+                      class="color-text"
+                    />
+                  </div>
+                  <p class="color-hint">
+                    Highlights, chips, and supporting accents.
+                  </p>
+                </div>
+                <div class="color-picker-group">
+                  <label>Tertiary Color</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="tertiaryColor" value="#0ea5e9" />
+                    <input
+                      type="text"
+                      id="tertiaryColorText"
+                      value="#0ea5e9"
+                      class="color-text"
+                    />
+                  </div>
+                  <p class="color-hint">
+                    Badges and dynamic highlight elements.
+                  </p>
+                </div>
+              </div>
+
+              <h4 class="form-subsection-title">Preset Color Schemes</h4>
+              <div class="color-presets">
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#1a1a1a', '#d4a017', '#0ea5e9')"
+                  style="--c1: #1a1a1a; --c2: #d4a017"
+                >
+                  <span class="preset-swatch"></span>
+                  Black & Gold
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#0ea5e9', '#f59e0b', '#a855f7')"
+                  style="--c1: #0ea5e9; --c2: #f59e0b"
+                >
+                  <span class="preset-swatch"></span>
+                  Sky & Sunset
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#059669', '#84cc16', '#22d3ee')"
+                  style="--c1: #059669; --c2: #84cc16"
+                >
+                  <span class="preset-swatch"></span>
+                  Fresh Green
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#dc2626', '#fbbf24', '#0ea5e9')"
+                  style="--c1: #dc2626; --c2: #fbbf24"
+                >
+                  <span class="preset-swatch"></span>
+                  Bold Warm
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#7c3aed', '#ec4899', '#22d3ee')"
+                  style="--c1: #7c3aed; --c2: #ec4899"
+                >
+                  <span class="preset-swatch"></span>
+                  Purple Pop
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#0f766e', '#14b8a6', '#f59e0b')"
+                  style="--c1: #0f766e; --c2: #14b8a6"
+                >
+                  <span class="preset-swatch"></span>
+                  Teal Energy
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#1f2937', '#6b7280', '#f97316')"
+                  style="--c1: #1f2937; --c2: #6b7280"
+                >
+                  <span class="preset-swatch"></span>
+                  Urban Gray
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#334155', '#38bdf8', '#f43f5e')"
+                  style="--c1: #334155; --c2: #38bdf8"
+                >
+                  <span class="preset-swatch"></span>
+                  Slate Neon
+                </button>
+                <button
+                  class="color-preset"
+                  onclick="applyColorPreset('#4c1d95', '#22c55e', '#f59e0b')"
+                  style="--c1: #4c1d95; --c2: #22c55e"
+                >
+                  <span class="preset-swatch"></span>
+                  Royal Mix
+                </button>
+              </div>
+
+              <h4 class="form-subsection-title">Typography</h4>
+              <div class="form-grid">
+                <div class="form-group">
+                  <label>English Heading Font</label>
+                  <select id="enHeadingFont">
+                    <option value="inter" selected>Inter</option>
+                    <option value="poppins">Poppins</option>
+                    <option value="montserrat">Montserrat</option>
+                    <option value="nunito">Nunito</option>
+                    <option value="roboto">Roboto</option>
+                    <option value="lora">Lora</option>
+                    <option value="playfair">Playfair Display</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>English Body Font</label>
+                  <select id="enBodyFont">
+                    <option value="inter" selected>Inter</option>
+                    <option value="poppins">Poppins</option>
+                    <option value="montserrat">Montserrat</option>
+                    <option value="nunito">Nunito</option>
+                    <option value="roboto">Roboto</option>
+                    <option value="lora">Lora</option>
+                    <option value="playfair">Playfair Display</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Arabic Heading Font</label>
+                  <select id="arHeadingFont">
+                    <option value="tajawal" selected>Tajawal</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="almarai">Almarai</option>
+                    <option value="changa">Changa</option>
+                    <option value="notoSansArabic">Noto Sans Arabic</option>
+                    <option value="notoKufiArabic">Noto Kufi Arabic</option>
+                    <option value="amiri">Amiri</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Arabic Body Font</label>
+                  <select id="arBodyFont">
+                    <option value="tajawal" selected>Tajawal</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="almarai">Almarai</option>
+                    <option value="changa">Changa</option>
+                    <option value="notoSansArabic">Noto Sans Arabic</option>
+                    <option value="notoKufiArabic">Noto Kufi Arabic</option>
+                    <option value="amiri">Amiri</option>
+                  </select>
+                </div>
+              </div>
+
+              <h4 class="form-subsection-title">Light Mode Palette</h4>
+              <div class="color-pickers">
+                <div class="color-picker-group">
+                  <label>Light Background</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="lightBgColor" value="#fafafa" />
+                    <input
+                      type="text"
+                      id="lightBgColorText"
+                      value="#fafafa"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Light Surface</label>
+                  <div class="color-input-wrap">
+                    <input
+                      type="color"
+                      id="lightSurfaceColor"
+                      value="#ffffff"
+                    />
+                    <input
+                      type="text"
+                      id="lightSurfaceColorText"
+                      value="#ffffff"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Light Surface Alt</label>
+                  <div class="color-input-wrap">
+                    <input
+                      type="color"
+                      id="lightSurface2Color"
+                      value="#f3f3f3"
+                    />
+                    <input
+                      type="text"
+                      id="lightSurface2ColorText"
+                      value="#f3f3f3"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Light Text</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="lightTextColor" value="#1a1a1a" />
+                    <input
+                      type="text"
+                      id="lightTextColorText"
+                      value="#1a1a1a"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Light Muted Text</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="lightMutedColor" value="#888888" />
+                    <input
+                      type="text"
+                      id="lightMutedColorText"
+                      value="#888888"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Light Border</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="lightBorderColor" value="#e5e5e5" />
+                    <input
+                      type="text"
+                      id="lightBorderColorText"
+                      value="#e5e5e5"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="form-subsection-title">Dark Mode Palette</h4>
+              <div class="color-pickers">
+                <div class="color-picker-group">
+                  <label>Dark Primary</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="darkPrimaryColor" value="#fbbf24" />
+                    <input
+                      type="text"
+                      id="darkPrimaryColorText"
+                      value="#fbbf24"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Secondary</label>
+                  <div class="color-input-wrap">
+                    <input
+                      type="color"
+                      id="darkSecondaryColor"
+                      value="#f59e0b"
+                    />
+                    <input
+                      type="text"
+                      id="darkSecondaryColorText"
+                      value="#f59e0b"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Tertiary</label>
+                  <div class="color-input-wrap">
+                    <input
+                      type="color"
+                      id="darkTertiaryColor"
+                      value="#34d399"
+                    />
+                    <input
+                      type="text"
+                      id="darkTertiaryColorText"
+                      value="#34d399"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Background</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="darkBgColor" value="#1a1b23" />
+                    <input
+                      type="text"
+                      id="darkBgColorText"
+                      value="#1a1b23"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Surface</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="darkSurfaceColor" value="#22253a" />
+                    <input
+                      type="text"
+                      id="darkSurfaceColorText"
+                      value="#22253a"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Surface Alt</label>
+                  <div class="color-input-wrap">
+                    <input
+                      type="color"
+                      id="darkSurface2Color"
+                      value="#2a2e45"
+                    />
+                    <input
+                      type="text"
+                      id="darkSurface2ColorText"
+                      value="#2a2e45"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Text</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="darkTextColor" value="#e8eaf0" />
+                    <input
+                      type="text"
+                      id="darkTextColorText"
+                      value="#e8eaf0"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Muted Text</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="darkMutedColor" value="#8b90a8" />
+                    <input
+                      type="text"
+                      id="darkMutedColorText"
+                      value="#8b90a8"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Dark Border</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="darkBorderColor" value="#353a54" />
+                    <input
+                      type="text"
+                      id="darkBorderColorText"
+                      value="#353a54"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="form-subsection-title">Media & Banner Styling</h4>
+              <div class="color-pickers">
+                <div class="color-picker-group">
+                  <label>Banner Gradient Start</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="bannerStartColor" value="#d4a017" />
+                    <input
+                      type="text"
+                      id="bannerStartColorText"
+                      value="#d4a017"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Banner Gradient End</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="bannerEndColor" value="#1a1a1a" />
+                    <input
+                      type="text"
+                      id="bannerEndColorText"
+                      value="#1a1a1a"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Image Frame/Ring</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="imageRingColor" value="#d4a017" />
+                    <input
+                      type="text"
+                      id="imageRingColorText"
+                      value="#d4a017"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Image Overlay Tone</label>
+                  <div class="color-input-wrap">
+                    <input
+                      type="color"
+                      id="imageOverlayColor"
+                      value="#0f0f0f"
+                    />
+                    <input
+                      type="text"
+                      id="imageOverlayColorText"
+                      value="#0f0f0f"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+                <div class="color-picker-group">
+                  <label>Hero Card Tint</label>
+                  <div class="color-input-wrap">
+                    <input type="color" id="heroCardColor" value="#ffffff" />
+                    <input
+                      type="text"
+                      id="heroCardColorText"
+                      value="#ffffff"
+                      class="color-text"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="form-subsection-title">Additional Options</h4>
+              <div class="options-grid">
+                <label class="option-toggle">
+                  <input type="checkbox" id="enableDarkMode" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">Enable Dark Mode Toggle</span>
+                </label>
+                <label class="option-toggle">
+                  <input type="checkbox" id="enableLanguageToggle" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label"
+                    >Enable Language Toggle (EN/AR)</span
+                  >
+                </label>
+                <label class="option-toggle">
+                  <input type="checkbox" id="enableWhatsappFloat" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">Floating WhatsApp Button</span>
+                </label>
+                <label class="option-toggle">
+                  <input type="checkbox" id="enableCart" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">Shopping Cart</span>
+                </label>
+                <label class="option-toggle">
+                  <input type="checkbox" id="enableWishlist" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">Wishlist Feature</span>
+                </label>
+                <label class="option-toggle">
+                  <input type="checkbox" id="enableReviews" checked />
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-label">Customer Reviews Section</span>
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label>Currency</label>
+                <select id="currency">
+                  <option value="USD">USD ($)</option>
+                  <option value="EUR">EUR (€)</option>
+                  <option value="LBP">LBP (ل.ل)</option>
+                  <option value="AED">AED (د.إ)</option>
+                  <option value="SAR">SAR (ر.س)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Currency Exchange Rate (to local currency)</label>
+                <input
+                  type="number"
+                  id="exchangeRate"
+                  value="90000"
+                  placeholder="e.g., 90000"
+                />
+                <p class="form-hint">
+                  Used to display prices in local currency (e.g., LBP)
+                </p>
+              </div>
+
+              <div class="form-actions">
+                <button class="btn btn-outline" onclick="prevStep()">
+                  <i class="fas fa-arrow-left"></i>
+                  Back
+                </button>
+                <button
+                  class="btn btn-primary btn-lg"
+                  onclick="generateWebsite()"
+                >
+                  <i class="fas fa-wand-magic-sparkles"></i>
+                  Generate Website
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview Panel -->
+          <div class="preview-panel">
+            <div class="preview-header">
+              <h3>Live Preview</h3>
+              <div class="preview-controls">
+                <button
+                  class="preview-device active"
+                  data-device="mobile"
+                  onclick="setPreviewDevice('mobile')"
+                >
+                  <i class="fas fa-mobile-screen"></i>
+                </button>
+                <button
+                  class="preview-device"
+                  data-device="tablet"
+                  onclick="setPreviewDevice('tablet')"
+                >
+                  <i class="fas fa-tablet-screen-button"></i>
+                </button>
+                <button
+                  class="preview-device"
+                  data-device="desktop"
+                  onclick="setPreviewDevice('desktop')"
+                >
+                  <i class="fas fa-display"></i>
+                </button>
+              </div>
+            </div>
+            <div class="preview-frame-wrapper" id="previewWrapper">
+              <div class="preview-frame mobile" id="previewFrame">
+                <div class="preview-content" id="previewContent">
+                  <div class="preview-placeholder">
+                    <i class="fas fa-eye"></i>
+                    <p>Your preview will appear here as you build</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Output Modal -->
+    <div class="modal-overlay" id="outputModal">
+      <div class="modal-content output-modal">
+        <div class="modal-header">
+          <h2><i class="fas fa-check-circle"></i> Website Generated!</h2>
+          <button class="modal-close" onclick="closeOutputModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p class="modal-desc">
+            Your website has been generated successfully. Download the files or
+            copy the code below.
+          </p>
+
+          <div class="output-tabs">
+            <button class="output-tab active" onclick="switchOutputTab('html')">
+              index.html
+            </button>
+            <button class="output-tab" onclick="switchOutputTab('css')">
+              styles.css
+            </button>
+            <button class="output-tab" onclick="switchOutputTab('js')">
+              script.js
+            </button>
+          </div>
+
+          <div class="output-code-wrap">
+            <pre class="output-code" id="outputCode"></pre>
+            <button class="copy-btn" onclick="copyCode()">
+              <i class="fas fa-copy"></i>
+              Copy
+            </button>
+          </div>
+
+          <div class="output-actions">
+            <button class="btn btn-primary btn-lg" onclick="downloadAll()">
+              <i class="fas fa-download"></i>
+              Download All Files (ZIP)
+            </button>
+            <button class="btn btn-outline" onclick="previewFullscreen()">
+              <i class="fas fa-expand"></i>
+              Preview Fullscreen
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal-overlay" id="productModal">
+      <div class="modal-content product-form-modal">
+        <div class="modal-header">
+          <h2 id="productModalTitle">Add Product</h2>
+          <button class="modal-close" onclick="closeProductModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Product Name (English) *</label>
+              <input
+                type="text"
+                id="prodNameEn"
+                placeholder="e.g., Classic T-Shirt"
+              />
+            </div>
+            <div class="form-group">
+              <label>Product Name (Arabic) *</label>
+              <input
+                type="text"
+                id="prodNameAr"
+                placeholder="تيشيرت كلاسيكي"
+                dir="rtl"
+              />
+            </div>
+          </div>
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Price *</label>
+              <input
+                type="number"
+                id="prodPrice"
+                placeholder="25"
+                step="0.01"
+              />
+            </div>
+            <div class="form-group">
+              <label>Original Price (if on sale)</label>
+              <input
+                type="number"
+                id="prodOrigPrice"
+                placeholder="35"
+                step="0.01"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Category *</label>
+            <select id="prodCategory">
+              <!-- Will be populated dynamically -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Image URL *</label>
+            <input
+              type="url"
+              id="prodImage"
+              placeholder="https://example.com/image.jpg"
+            />
+          </div>
+          <div class="form-group">
+            <label>Sizes (comma separated)</label>
+            <input type="text" id="prodSizes" placeholder="S, M, L, XL" />
+          </div>
+          <div class="form-group">
+            <label>Badge</label>
+            <select id="prodBadge">
+              <option value="">None</option>
+              <option value="new">New</option>
+              <option value="sale">Sale</option>
+              <option value="bestseller">Bestseller</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Rating (1-5)</label>
+            <input
+              type="number"
+              id="prodRating"
+              placeholder="4.5"
+              min="1"
+              max="5"
+              step="0.1"
+            />
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-outline" onclick="closeProductModal()">
+              Cancel
+            </button>
+            <button class="btn btn-primary" onclick="saveProduct()">
+              Save Product
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Modal -->
+    <div class="modal-overlay" id="categoryModal">
+      <div class="modal-content category-form-modal">
+        <div class="modal-header">
+          <h2 id="categoryModalTitle">Add Category</h2>
+          <button class="modal-close" onclick="closeCategoryModal()">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Category Name (English) *</label>
+              <input
+                type="text"
+                id="catNameEn"
+                placeholder="e.g., Summer Collection"
+              />
+            </div>
+            <div class="form-group">
+              <label>Category Name (Arabic) *</label>
+              <input
+                type="text"
+                id="catNameAr"
+                placeholder="مجموعة صيفية"
+                dir="rtl"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Category ID (lowercase, no spaces) *</label>
+            <input type="text" id="catId" placeholder="summer" />
+          </div>
+          <div class="form-group">
+            <label>Category Image URL</label>
+            <input
+              type="url"
+              id="catImage"
+              placeholder="https://example.com/category.jpg"
+            />
+          </div>
+          <div class="form-actions">
+            <button class="btn btn-outline" onclick="closeCategoryModal()">
+              Cancel
+            </button>
+            <button class="btn btn-primary" onclick="saveCategory()">
+              Save Category
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <span class="logo">
+              <i class="fas fa-wand-magic-sparkles"></i>
+              MVP Generator
+            </span>
+            <p>Create beautiful e-commerce websites in minutes</p>
+          </div>
+          <div class="footer-links">
+            <a href="#templates">Templates</a>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
