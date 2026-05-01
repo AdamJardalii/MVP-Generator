@@ -21,18 +21,16 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 # Consider updating to v4 if a newer version supporting Node.js 24 is released.
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 24 # Update to Node.js 24
+          node-version: 24
           cache: npm
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5 # Consider updating to v5 if a newer version supporting Node.js 24 is released.
-        with:
-          enablement: true
+        uses: actions/configure-pages@v5
 
       - name: Install dependencies
         run: npm ci
