@@ -41,6 +41,9 @@ jobs:
       - name: Build static site
         run: npm run build
 
+      - name: Debug out directory
+        run: find out/ -type f | sort
+
       - name: Keep Next.js asset paths available
         run: touch out/.nojekyll
 
